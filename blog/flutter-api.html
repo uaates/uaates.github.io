@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yeni Başlayanlar İçin Flutter | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero hero-small">
+    <div class="container hero-content">
+      <h1>Yeni Başlayanlar İçin Flutter</h1>
+      <p class="subtitle">
+        Flutter’a sıfırdan giriş
+        <span>Kurulum · İlk Proje · Temel Kavramlar</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="index.html" class="btn ghost">← Blog</a>
+        <a href="../index.html" class="btn ghost">Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <article class="blog-content">
+
+        <p>
+          Flutter, Google tarafından geliştirilen açık kaynaklı
+          bir mobil uygulama geliştirme framework’üdür.
+          Tek bir kod tabanı ile hem Android hem de iOS
+          uygulamaları geliştirebilmeni sağlar.
+        </p>
+
+        <h3>1️⃣ Flutter Nedir?</h3>
+        <p>
+          Flutter, Dart programlama dili ile çalışır ve
+          widget tabanlı bir mimariye sahiptir.
+          Uygulamadaki her şey (buton, yazı, boşluk)
+          bir widget’tır.
+        </p>
+
+        <h3>2️⃣ Flutter Kurulumu</h3>
+        <p>
+          Flutter SDK’yı kurduktan sonra sisteminin
+          hazır olup olmadığını kontrol etmek için:
+        </p>
+
+        <pre><code>flutter doctor</code></pre>
+
+        <p>
+          Bu komut, eksik bağımlılıkları ve hataları gösterir.
+        </p>
+
+        <h3>3️⃣ İlk Flutter Projesi</h3>
+        <p>
+          Yeni bir Flutter projesi oluşturmak için:
+        </p>
+
+        <pre><code>flutter create my_first_app
+cd my_first_app
+flutter run</code></pre>
+
+        <p>
+          Bu adımlar ilk Flutter uygulamanı çalıştırır.
+        </p>
+
+        <h3>4️⃣ Widget Mantığı</h3>
+        <p>
+          Flutter’da UI tamamen widget’lardan oluşur.
+          Örnek basit bir yapı:
+        </p>
+
+        <pre><code>Scaffold(
+  appBar: AppBar(
+    title: Text('Merhaba Flutter'),
+  ),
+  body: Center(
+    child: Text('İlk uygulamam'),
+  ),
+)</code></pre>
+
+        <h3>5️⃣ Sonuç</h3>
+        <p>
+          Flutter öğrenmeye başlamak için resmi dokümantasyon,
+          küçük projeler ve bol pratik en iyi yoldur.
+          Temeli sağlam attıktan sonra state management,
+          API entegrasyonu ve performans konularına geçebilirsin.
+        </p>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Umut Abdullah Ateş</p>
+    </div>
+  </footer>
+
+</body>
+</html>

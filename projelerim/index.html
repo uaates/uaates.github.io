@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projelerim | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS (ORTAK) -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero hero-small">
+    <div class="container hero-content" data-aos="fade-up">
+      <h1>Projelerim</h1>
+      <p class="subtitle">
+        Geliştirdiğim bazı projeler
+        <span>Mobil · Web · Sistem</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="../index.html" class="btn ghost">← Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projeler">
+    <div class="container">
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card" data-aos="fade-up">
+          <h3>WeatherWear AI</h3>
+          <p class="project-desc">
+            Hava durumuna göre kıyafet önerileri sunan
+            yapay zeka destekli mobil uygulama.
+            Konuma göre hava verisi alır ve kullanıcıya
+            akıllı giyim tavsiyeleri üretir.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Python</span>
+            <span>API</span>
+          </div>
+
+          <a
+            href="https://github.com/uaates/-weatherwear_ai-"
+            target="_blank"
+            class="btn primary"
+          >
+            GitHub’da Gör
+          </a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <h3>Mobil Restoran Uygulaması</h3>
+          <p class="project-desc">
+            Bir restoran için geliştirilen,
+            konum tabanlı mobil uygulama.
+            Proje detayları gizlilik sözleşmesi
+            kapsamında paylaşılmamaktadır.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Maps</span>
+          </div>
+
+          <span class="private-badge">Özel Proje</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Umut Abdullah Ateş</p>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-out-cubic"
+    });
+  </script>
+
+</body>
+</html>

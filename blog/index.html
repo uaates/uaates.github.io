@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Yazıları | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero hero-small">
+    <div class="container hero-content" data-aos="fade-up">
+      <h1>Blog Yazılarım</h1>
+      <p class="subtitle">
+        Yazılım, Flutter ve Python üzerine notlarım
+        <span>Öğrendiklerim · Deneyimlerim</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="../index.html" class="btn ghost">← Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BLOG LIST -->
+  <section class="section" id="blog-posts">
+    <div class="container">
+
+      <div class="blog-list">
+
+        <!-- POST 1 -->
+        <article class="blog-card" data-aos="fade-up">
+          <h3>Yeni Başlayanlar İçin Flutter</h3>
+          <p class="blog-excerpt">
+            Flutter ile mobil uygulama geliştirmeye nasıl başlanır?
+            Kurulumdan ilk projeye kadar temel adımlar ve ipuçları.
+          </p>
+
+          <div class="blog-meta">
+            <span>Flutter</span>
+            <span>Mobil</span>
+          </div>
+
+          <a href="flutter-baslangic.html" class="btn primary">
+            Devamını Oku
+          </a>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Python’da Veritabanı Yönetimi</h3>
+          <p class="blog-excerpt">
+            Python ile SQLite ve SQLAlchemy kullanarak
+            veritabanı işlemlerini nasıl yönetirsin?
+          </p>
+
+          <div class="blog-meta">
+            <span>Python</span>
+            <span>Database</span>
+          </div>
+
+          <a href="python-veritabani.html" class="btn primary">
+            Devamını Oku
+          </a>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Flutter ile API Entegrasyonu</h3>
+          <p class="blog-excerpt">
+            Flutter uygulamalarında REST API entegrasyonu,
+            HTTP paketleri ve JSON veri yönetimi.
+          </p>
+
+          <div class="blog-meta">
+            <span>Flutter</span>
+            <span>API</span>
+          </div>
+
+          <a href="flutter-api.html" class="btn primary">
+            Devamını Oku
+          </a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Umut Abdullah Ateş</p>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-out-cubic"
+    });
+  </script>
+
+</body>
+</html>

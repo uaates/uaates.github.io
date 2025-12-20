@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flutter ile API Entegrasyonu | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero hero-small">
+    <div class="container hero-content">
+      <h1>Flutter ile API Entegrasyonu</h1>
+      <p class="subtitle">
+        REST API, HTTP paketleri ve JSON veri yönetimi
+        <span>GET · POST · Async · JSON</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="index.html" class="btn ghost">← Blog</a>
+        <a href="../index.html" class="btn ghost">Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <article class="blog-content">
+
+        <p>
+          Flutter uygulamalarında API entegrasyonu,
+          modern mobil uygulamaların temel yapı taşlarından biridir.
+          REST API’ler aracılığıyla sunucudan veri alabilir,
+          veri gönderebilir ve uygulamanı dinamik hale getirebilirsin.
+        </p>
+
+        <h3>1️⃣ HTTP Paketi Nedir?</h3>
+        <p>
+          Flutter’da API istekleri yapmak için en yaygın kullanılan
+          paket <strong>http</strong> paketidir.
+          Bu paket ile GET, POST, PUT, DELETE gibi
+          HTTP isteklerini kolayca gerçekleştirebilirsin.
+        </p>
+
+        <pre><code>dependencies:
+  http: ^0.13.3</code></pre>
+
+        <h3>2️⃣ API’den Veri Çekme (GET)</h3>
+        <p>
+          Bir REST API’den veri almak için
+          <code>http.get()</code> metodu kullanılır.
+        </p>
+
+        <pre><code>import 'package:http/http.dart' as http;
+import 'dart:convert';
+
+Future<void> fetchData() async {
+  final response = await http.get(
+    Uri.parse('https://jsonplaceholder.typicode.com/posts')
+  );
+
+  if (response.statusCode == 200) {
+    final data = jsonDecode(response.body);
+    print(data);
+  } else {
+    throw Exception('Veri alınamadı');
+  }
+}</code></pre>
+
+        <h3>3️⃣ JSON Veriyi Parse Etme</h3>
+        <p>
+          API’den gelen veriler genellikle JSON formatındadır.
+          Bu verileri model sınıflarına dönüştürmek,
+          uygulamanın daha düzenli olmasını sağlar.
+        </p>
+
+        <pre><code>class Post {
+  final int id;
+  final String title;
+
+  Post({required this.id, required this.title});
+
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+      id: json['id'],
+      title: json['title'],
+    );
+  }
+}</code></pre>
+
+        <h3>4️⃣ FutureBuilder Kullanımı</h3>
+        <p>
+          API’den gelen verileri ekranda göstermek için
+          <code>FutureBuilder</code> kullanılır.
+        </p>
+
+        <pre><code>FutureBuilder(
+  future: fetchData(),
+  builder: (context, snapshot) {
+    if (snapshot.connectionState == ConnectionState.waiting) {
+      return CircularProgressIndicator();
+    } else if (snapshot.hasError) {
+      return Text('Hata oluştu');
+    } else {
+      return Text('Veri yüklendi');
+    }
+  },
+)</code></pre>
+
+        <h3>5️⃣ En İyi Uygulamalar</h3>
+        <ul>
+          <li>API çağrılarını servis sınıflarında topla</li>
+          <li>Model–View–Service ayrımı yap</li>
+          <li>Hata durumlarını kullanıcıya bildir</li>
+          <li>Loading state’leri yönet</li>
+        </ul>
+
+        <h3>6️⃣ Sonuç</h3>
+        <p>
+          Flutter ile API entegrasyonu, uygulamanın
+          profesyonel seviyeye çıkmasını sağlar.
+          Sağlam bir mimari ile yazılmış API katmanı,
+          performans ve sürdürülebilirlik açısından kritiktir.
+        </p>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Umut Abdullah Ateş</p>
+    </div>
+  </footer>
+
+</body>
+</html>

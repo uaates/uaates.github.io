@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python’da Veritabanı Yönetimi | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero hero-small">
+    <div class="container hero-content">
+      <h1>Python’da Veritabanı Yönetimi</h1>
+      <p class="subtitle">
+        SQLite ve SQLAlchemy ile temel veritabanı işlemleri
+        <span>CRUD · ORM · Model Yapısı</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="index.html" class="btn ghost">← Blog</a>
+        <a href="../index.html" class="btn ghost">Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <article class="blog-content">
+
+        <p>
+          Python, veritabanı yönetimi konusunda oldukça güçlü
+          ve esnek araçlara sahiptir. Küçük projelerden
+          büyük ölçekli uygulamalara kadar farklı ihtiyaçlara
+          uygun çözümler sunar.
+        </p>
+
+        <h3>1️⃣ SQLite Nedir?</h3>
+        <p>
+          SQLite, dosya tabanlı, hafif ve kurulumsuz bir
+          veritabanı sistemidir. Küçük ve orta ölçekli
+          projeler için idealdir.
+        </p>
+
+        <h3>2️⃣ SQLite ile Veritabanı Bağlantısı</h3>
+        <p>
+          Python’da SQLite kullanarak veritabanı bağlantısı
+          kurmak oldukça basittir.
+        </p>
+
+        <pre><code>import sqlite3
+
+connection = sqlite3.connect("database.db")
+cursor = connection.cursor()</code></pre>
+
+        <p>
+          Bu kod, <code>database.db</code> adlı bir veritabanı
+          dosyası oluşturur ve bağlantıyı başlatır.
+        </p>
+
+        <h3>3️⃣ SQLAlchemy Nedir?</h3>
+        <p>
+          SQLAlchemy, Python için geliştirilmiş güçlü bir
+          ORM (Object Relational Mapping) kütüphanesidir.
+          SQL yazmadan Python sınıfları üzerinden
+          veritabanı işlemleri yapmanı sağlar.
+        </p>
+
+        <h3>4️⃣ SQLAlchemy ile Model Oluşturma</h3>
+        <p>
+          Basit bir kullanıcı modeli örneği:
+        </p>
+
+        <pre><code>from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    email = Column(String)</code></pre>
+
+        <h3>5️⃣ Veritabanı ve Tablo Oluşturma</h3>
+        <p>
+          Model tanımlandıktan sonra tabloyu oluşturmak için:
+        </p>
+
+        <pre><code>engine = create_engine("sqlite:///database.db")
+Base.metadata.create_all(engine)</code></pre>
+
+        <h3>6️⃣ CRUD İşlemleri</h3>
+        <p>
+          SQLAlchemy ile temel CRUD işlemleri:
+        </p>
+
+        <ul>
+          <li><strong>Create:</strong> Yeni kayıt ekleme</li>
+          <li><strong>Read:</strong> Kayıtları listeleme</li>
+          <li><strong>Update:</strong> Kayıt güncelleme</li>
+          <li><strong>Delete:</strong> Kayıt silme</li>
+        </ul>
+
+        <h3>7️⃣ Sonuç</h3>
+        <p>
+          Python’da veritabanı yönetimi, doğru araçlar
+          kullanıldığında oldukça temiz ve sürdürülebilir
+          bir hale gelir. Küçük projelerde SQLite,
+          büyük projelerde ise SQLAlchemy gibi ORM’ler
+          kullanmak en doğru yaklaşımdır.
+        </p>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Umut Abdullah Ateş</p>
+    </div>
+  </footer>
+
+</body>
+</html>
