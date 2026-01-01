@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog Yazıları | Umut Abdullah Ateş</title>
 
+  <!-- SEO -->
+  <meta name="description" content="Flutter, Python, frontend yapısı ve deployment üzerine teknik blog yazıları.">
+  <meta name="author" content="Umut Abdullah Ateş">
+
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -19,10 +23,10 @@
 <!-- HERO -->
 <header class="hero hero-small">
   <div class="container hero-content" data-aos="fade-up">
-    <h1>Blog Yazılarım</h1>
+    <h1>Teknik Blog</h1>
     <p class="subtitle">
-      Yazılım, Flutter ve Python üzerine notlarım
-      <span>Öğrendiklerim · Deneyimlerim</span>
+      Yazılım geliştirirken öğrendiklerim
+      <span>Flutter · Python · Frontend · Deployment</span>
     </p>
 
     <div class="hero-buttons">
@@ -32,28 +36,70 @@
   </div>
 </header>
 
+<!-- BLOG INTRO -->
+<section class="section">
+  <div class="container" data-aos="fade-up" style="max-width:820px">
+    <p style="color:var(--muted); line-height:1.9">
+      Bu blogda; Flutter ile mobil geliştirme, Python tabanlı backend,
+      frontend dosya yapıları ve projelerin canlıya alınma süreçleri
+      hakkında pratik ve gerçek deneyimlere dayalı yazılar paylaşıyorum.
+      Yazılarım daha çok <strong>“gerçek hayatta işime yarayanlar”</strong>
+      üzerine.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURED POST -->
+<section class="section">
+  <div class="container" data-aos="fade-up">
+    <h2 style="text-align:center">Öne Çıkan Yazı</h2>
+
+    <div class="blog-list" style="margin-top:3rem">
+      <article class="blog-card">
+        <h3>GitHub Pages ile Site Yayınlama</h3>
+        <p class="blog-excerpt">
+          HTML ve CSS ile hazırladığın bir projeyi,
+          sıfır maliyetle GitHub Pages üzerinden
+          nasıl canlıya alırsın?
+        </p>
+
+        <div class="blog-meta">
+          <span>GitHub</span>
+          <span>Deployment</span>
+          <span>⏱ 6 dk</span>
+        </div>
+
+        <a href="github-pages.html" class="btn primary">
+          Yazıyı Oku
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- BLOG LIST -->
 <section class="section">
   <div class="container">
 
-    <div class="blog-list">
+    <h2 style="text-align:center" data-aos="fade-up">Tüm Yazılar</h2>
+
+    <div class="blog-list" style="margin-top:3rem">
 
       <!-- POST 1 -->
       <article class="blog-card" data-aos="fade-up">
         <h3>Yeni Başlayanlar İçin Flutter</h3>
         <p class="blog-excerpt">
-          Flutter ile mobil uygulama geliştirmeye nasıl başlanır?
-          Kurulumdan ilk projeye kadar temel adımlar.
+          Flutter ile mobil uygulama geliştirmeye
+          sıfırdan başlamak isteyenler için rehber.
         </p>
 
         <div class="blog-meta">
           <span>Flutter</span>
           <span>Mobil</span>
           <span>⏱ 6 dk</span>
-          <span>📅 2025</span>
         </div>
 
-        <a href="flutter-baslangic.html" class="btn primary">
+        <a href="flutter-baslangic.html" class="btn ghost">
           Devamını Oku
         </a>
       </article>
@@ -62,18 +108,17 @@
       <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
         <h3>Python’da Veritabanı Yönetimi</h3>
         <p class="blog-excerpt">
-          Python ile SQLite ve SQLAlchemy kullanarak
-          veritabanı işlemlerini yönetme.
+          SQLite ve SQLAlchemy ile
+          Python tarafında veritabanı yönetimi.
         </p>
 
         <div class="blog-meta">
           <span>Python</span>
           <span>Database</span>
           <span>⏱ 7 dk</span>
-          <span>📅 2025</span>
         </div>
 
-        <a href="python-veritabani.html" class="btn primary">
+        <a href="python-veritabani.html" class="btn ghost">
           Devamını Oku
         </a>
       </article>
@@ -82,64 +127,58 @@
       <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
         <h3>Flutter ile API Entegrasyonu</h3>
         <p class="blog-excerpt">
-          Flutter uygulamalarında REST API kullanımı,
-          HTTP istekleri ve JSON veri yönetimi.
+          REST API entegrasyonu, HTTP paketleri
+          ve JSON veri yönetimi.
         </p>
 
         <div class="blog-meta">
           <span>Flutter</span>
           <span>API</span>
           <span>⏱ 5 dk</span>
-          <span>📅 2025</span>
         </div>
 
-        <a href="flutter-api.html" class="btn primary">
+        <a href="flutter-api.html" class="btn ghost">
           Devamını Oku
         </a>
       </article>
 
       <!-- POST 4 -->
       <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>GitHub Pages ile Site Yayınlama</h3>
-        <p class="blog-excerpt">
-          HTML ve CSS ile hazırlanan bir siteyi
-          GitHub Pages üzerinden ücretsiz yayınlama rehberi.
-        </p>
-
-        <div class="blog-meta">
-          <span>GitHub</span>
-          <span>Deployment</span>
-          <span>⏱ 6 dk</span>
-          <span>📅 2025</span>
-        </div>
-
-        <a href="github-pages.html" class="btn primary">
-          Devamını Oku
-        </a>
-      </article>
-
-      <!-- POST 5 -->
-      <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
         <h3>Frontend Dosya Yapısı Nasıl Olmalı?</h3>
         <p class="blog-excerpt">
           Küçük ve orta ölçekli projeler için
-          temiz ve sürdürülebilir dosya yapısı önerileri.
+          sürdürülebilir frontend dosya yapısı.
         </p>
 
         <div class="blog-meta">
           <span>HTML</span>
           <span>CSS</span>
           <span>⏱ 4 dk</span>
-          <span>📅 2025</span>
         </div>
 
-        <a href="frontend-structure.html" class="btn primary">
+        <a href="frontend-structure.html" class="btn ghost">
           Devamını Oku
         </a>
       </article>
 
     </div>
 
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align:center" data-aos="fade-up">
+    <h2>Bir fikrin mi var?</h2>
+    <p style="color:var(--muted); margin-top:1rem">
+      Yazılar hakkında geri bildirim veya
+      birlikte çalışma için bana ulaşabilirsin.
+    </p>
+
+    <div class="hero-buttons" style="margin-top:2rem">
+      <a href="../iletisim.html" class="btn primary">İletişime Geç</a>
+      <a href="../projelerim/index.html" class="btn ghost">Projeleri Gör</a>
+    </div>
   </div>
 </section>
 
