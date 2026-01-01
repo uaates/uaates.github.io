@@ -8,7 +8,7 @@
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- CSS (ORTAK) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/main.css" />
 
   <!-- AOS -->
@@ -16,92 +16,170 @@
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero hero-small">
-    <div class="container hero-content" data-aos="fade-up">
-      <h1>Projelerim</h1>
-      <p class="subtitle">
-        Geliştirdiğim bazı projeler
-        <span>Mobil · Web · Sistem</span>
-      </p>
+<!-- HERO -->
+<header class="hero hero-small">
+  <div class="container hero-content" data-aos="fade-up">
+    <h1>Projelerim</h1>
+    <p class="subtitle">
+      Geliştirdiğim projeler ve teknik çalışmalar
+      <span>Mobil · Web · Backend</span>
+    </p>
 
-      <div class="hero-buttons">
-        <a href="../index.html" class="btn ghost">← Ana Sayfa</a>
-      </div>
+    <div class="hero-buttons">
+      <a href="../index.html" class="btn ghost">← Ana Sayfa</a>
+      <a href="../blog/index.html" class="btn ghost">Blog Yazılarım</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projeler">
-    <div class="container">
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
 
-      <div class="projects-grid">
+    <div class="projects-grid">
 
-        <!-- PROJECT 1 -->
-        <div class="project-card" data-aos="fade-up">
-          <h3>WeatherWear AI</h3>
-          <p class="project-desc">
-            Hava durumuna göre kıyafet önerileri sunan
-            yapay zeka destekli mobil uygulama.
-            Konuma göre hava verisi alır ve kullanıcıya
-            akıllı giyim tavsiyeleri üretir.
-          </p>
+      <!-- PROJECT 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>WeatherWear AI</h3>
 
-          <div class="project-tags">
-            <span>Flutter</span>
-            <span>Python</span>
-            <span>API</span>
-          </div>
+        <p class="project-desc">
+          Hava durumuna göre kullanıcıya
+          kıyafet önerileri sunan,
+          yapay zeka destekli mobil uygulama.
+        </p>
 
-          <a
-            href="https://github.com/uaates/-weatherwear_ai-"
-            target="_blank"
-            class="btn primary"
-          >
-            GitHub’da Gör
+        <div class="project-tags">
+          <span>Flutter</span>
+          <span>Python</span>
+          <span>REST API</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/uaates/-weatherwear_ai-" target="_blank" class="btn primary">
+            GitHub
+          </a>
+          <a href="../blog/flutter-api.html" class="btn ghost">
+            Teknik Yazı
           </a>
         </div>
+      </div>
 
-        <!-- PROJECT 2 -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-          <h3>Mobil Restoran Uygulaması</h3>
-          <p class="project-desc">
-            Bir restoran için geliştirilen,
-            konum tabanlı mobil uygulama.
-            Proje detayları gizlilik sözleşmesi
-            kapsamında paylaşılmamaktadır.
-          </p>
+      <!-- PROJECT 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Mobil Restoran Uygulaması</h3>
 
-          <div class="project-tags">
-            <span>Flutter</span>
-            <span>Firebase</span>
-            <span>Maps</span>
-          </div>
+        <p class="project-desc">
+          Konum tabanlı çalışan,
+          restoranlara özel geliştirilen
+          mobil uygulama.
+        </p>
 
-          <span class="private-badge">Özel Proje</span>
+        <div class="project-tags">
+          <span>Flutter</span>
+          <span>Firebase</span>
+          <span>Maps</span>
         </div>
 
+        <span class="private-badge">
+          Gizlilik sözleşmesi nedeniyle detaylar paylaşılmamaktadır.
+        </span>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Kişisel Portfolio & Blog Sitesi</h3>
+
+        <p class="project-desc">
+          HTML, CSS ve GitHub Pages kullanılarak
+          geliştirilen kişisel web sitesi.
+          Blog, projeler ve iletişim bölümleri içerir.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>GitHub Pages</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="../index.html" class="btn primary">
+            Siteyi Gör
+          </a>
+          <a href="../blog/index.html" class="btn ghost">
+            Blog Yazıları
+          </a>
+        </div>
       </div>
 
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Umut Abdullah Ateş</p>
+  </div>
+</section>
+
+<!-- RELATED BLOG -->
+<section class="section">
+  <div class="container">
+
+    <h2 style="text-align:center; margin-bottom:3rem;">
+      İlgili Blog Yazıları
+    </h2>
+
+    <div class="blog-list">
+
+      <div class="blog-card" data-aos="fade-up">
+        <h3>Yeni Başlayanlar İçin Flutter</h3>
+        <p class="blog-excerpt">
+          Flutter’a sıfırdan başlamak isteyenler için
+          temel kavramlar ve ilk adımlar.
+        </p>
+        <a href="../blog/flutter-baslangic.html" class="btn ghost">
+          Oku →
+        </a>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="150">
+        <h3>Flutter ile API Entegrasyonu</h3>
+        <p class="blog-excerpt">
+          REST API kullanımı,
+          HTTP istekleri ve JSON veri yönetimi.
+        </p>
+        <a href="../blog/flutter-api.html" class="btn ghost">
+          Oku →
+        </a>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Python’da Veritabanı Yönetimi</h3>
+        <p class="blog-excerpt">
+          SQLite ve SQLAlchemy ile
+          veritabanı işlemleri.
+        </p>
+        <a href="../blog/python-veritabani.html" class="btn ghost">
+          Oku →
+        </a>
+      </div>
+
     </div>
-  </footer>
 
-  <!-- AOS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 800,
-      easing: "ease-out-cubic"
-    });
-  </script>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 Umut Abdullah Ateş</p>
+  </div>
+</footer>
+
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 800,
+    easing: "ease-out-cubic"
+  });
+</script>
 
 </body>
 </html>

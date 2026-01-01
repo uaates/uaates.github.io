@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Pages ile Site Yayınlama | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero hero-small">
+  <div class="container hero-content">
+    <h1>GitHub Pages ile Site Yayınlama</h1>
+    <p class="subtitle">
+      HTML & CSS projeni ücretsiz olarak internete aç
+      <span>GitHub · Deployment · Portfolio</span>
+    </p>
+
+    <div class="hero-buttons">
+      <a href="index.html" class="btn ghost">← Blog</a>
+      <a href="../index.html" class="btn ghost">Ana Sayfa</a>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <article class="blog-content">
+
+      <p>
+        GitHub Pages, HTML, CSS ve JavaScript ile hazırladığın
+        statik web sitelerini ücretsiz olarak yayınlamanı sağlayan
+        bir GitHub servisidir. Özellikle kişisel portföy ve blog
+        siteleri için oldukça idealdir.
+      </p>
+
+      <h3>1️⃣ GitHub Pages Nedir?</h3>
+      <p>
+        GitHub Pages, GitHub üzerindeki bir repository’den
+        otomatik olarak site oluşturan bir sistemdir.
+        Backend gerektirmez ve tamamen ücretsizdir.
+      </p>
+
+      <h3>2️⃣ Repo Oluşturma</h3>
+      <p>
+        Kişisel site yayınlamak için repository adı
+        <strong>kullaniciadi.github.io</strong> olmak zorundadır.
+      </p>
+
+      <pre><code>uaates.github.io</code></pre>
+
+      <p>
+        Bu isimlendirme sayesinde siten doğrudan
+        <code>https://uaates.github.io</code>
+        adresinden yayınlanır.
+      </p>
+
+      <h3>3️⃣ Dosya Yapısı</h3>
+      <p>
+        Basit bir GitHub Pages dosya yapısı:
+      </p>
+
+      <pre><code>/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── images/
+└── blog/</code></pre>
+
+      <h3>4️⃣ Git Komutları ile Yayınlama</h3>
+      <p>
+        Projeni GitHub’a göndermek için terminalden:
+      </p>
+
+      <pre><code>git init
+git add .
+git commit -m "Initial site"
+git branch -M main
+git remote add origin https://github.com/kullaniciadi/kullaniciadi.github.io.git
+git push -u origin main</code></pre>
+
+      <h3>5️⃣ GitHub Pages Ayarları</h3>
+      <p>
+        Repository oluşturduktan sonra:
+      </p>
+
+      <ul>
+        <li>Settings → Pages</li>
+        <li>Source: Deploy from a branch</li>
+        <li>Branch: main / root</li>
+      </ul>
+
+      <p>
+        Bu ayarlardan sonra GitHub Pages
+        otomatik olarak siteyi yayınlar.
+      </p>
+
+      <h3>6️⃣ Avantajları</h3>
+      <ul>
+        <li>Ücretsiz</li>
+        <li>HTTPS destekli</li>
+        <li>Kolay deployment</li>
+        <li>Portföy için ideal</li>
+      </ul>
+
+      <h3>7️⃣ Dezavantajları</h3>
+      <ul>
+        <li>Backend çalışmaz</li>
+        <li>Sadece statik dosyalar</li>
+      </ul>
+
+      <h3>8️⃣ Sonuç</h3>
+      <p>
+        Eğer kişisel bir portföy, blog ya da
+        küçük bir tanıtım sitesi yapmak istiyorsan,
+        GitHub Pages en hızlı ve en temiz çözümlerden biridir.
+        Özellikle yazılımcılar için CV’ye ciddi değer katar.
+      </p>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 Umut Abdullah Ateş</p>
+  </div>
+</footer>
+
+</body>
+</html>

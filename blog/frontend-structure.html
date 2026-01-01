@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Dosya Yapısı Nasıl Olmalı? | Umut Abdullah Ateş</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero hero-small">
+  <div class="container hero-content">
+    <h1>Frontend Dosya Yapısı Nasıl Olmalı?</h1>
+    <p class="subtitle">
+      Temiz, sürdürülebilir ve ölçeklenebilir yapı
+      <span>HTML · CSS · Proje Düzeni</span>
+    </p>
+
+    <div class="hero-buttons">
+      <a href="index.html" class="btn ghost">← Blog</a>
+      <a href="../index.html" class="btn ghost">Ana Sayfa</a>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <article class="blog-content">
+
+      <p>
+        Frontend projelerinde dosya yapısı,
+        kodun okunabilirliği ve sürdürülebilirliği açısından
+        kritik bir öneme sahiptir.
+        Küçük projelerde bile doğru yapı kurmak,
+        ileride oluşabilecek karmaşayı ciddi ölçüde azaltır.
+      </p>
+
+      <h3>1️⃣ Neden Dosya Yapısı Önemlidir?</h3>
+      <p>
+        Rastgele oluşturulmuş dosyalar,
+        proje büyüdükçe kontrol edilemez hale gelir.
+        İyi bir dosya yapısı:
+      </p>
+
+      <ul>
+        <li>Kodu daha okunur yapar</li>
+        <li>Bakımı kolaylaştırır</li>
+        <li>Yeni geliştiricilerin projeyi hızlı anlamasını sağlar</li>
+        <li>Hata ayıklamayı hızlandırır</li>
+      </ul>
+
+      <h3>2️⃣ Basit Bir Frontend Proje Yapısı</h3>
+      <p>
+        Küçük ve orta ölçekli statik projeler için
+        önerilen temel yapı:
+      </p>
+
+      <pre><code>/
+├── index.html
+├── iletisim.html
+├── projelerim/
+│   └── index.html
+├── blog/
+│   ├── index.html
+│   └── blog-yazisi.html
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── images/
+│       └── arkaplan.jpg
+</code></pre>
+
+      <h3>3️⃣ CSS Dosyalarının Ayrılması</h3>
+      <p>
+        Küçük projelerde tek bir <code>main.css</code> yeterlidir.
+        Proje büyüdükçe CSS dosyalarını ayırmak mantıklıdır:
+      </p>
+
+      <pre><code>css/
+├── main.css
+├── components.css
+├── pages.css
+</code></pre>
+
+      <p>
+        Bu sayede her dosya kendi sorumluluğunu taşır.
+      </p>
+
+      <h3>4️⃣ Görsellerin Yönetimi</h3>
+      <p>
+        Görselleri mutlaka ayrı bir klasörde tut.
+        Dosya isimleri anlamlı ve küçük harfli olmalı:
+      </p>
+
+      <pre><code>images/
+├── arkaplan.jpg
+├── profil.jpg
+├── project-weatherwear.png
+</code></pre>
+
+      <h3>5️⃣ HTML Sayfaları Nasıl Düzenlenmeli?</h3>
+      <p>
+        HTML dosyalarında:
+      </p>
+
+      <ul>
+        <li>Tek bir sorumluluk olmalı</li>
+        <li>Inline CSS kullanılmamalı</li>
+        <li>Tekrarlanan yapı sınıflarla çözülmeli</li>
+      </ul>
+
+      <h3>6️⃣ En Sık Yapılan Hatalar</h3>
+      <ul>
+        <li>Tüm CSS’i tek dosyada kontrolsüz büyütmek</li>
+        <li>Görselleri root dizine atmak</li>
+        <li>Sayfa isimlerinde büyük/küçük harf karmaşası</li>
+        <li>Relative path’leri yanlış kullanmak</li>
+      </ul>
+
+      <h3>7️⃣ Sonuç</h3>
+      <p>
+        Frontend projelerinde dosya yapısı,
+        yazılım kalitesini doğrudan etkiler.
+        Basit ama düzenli bir yapı kurmak,
+        hem geliştirici deneyimini hem de
+        projenin uzun ömürlü olmasını sağlar.
+      </p>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 Umut Abdullah Ateş</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
