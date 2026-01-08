@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projelerim | Umut Abdullah Ateş</title>
+  <title>Projeler | Umut Abdullah Ateş</title>
 
-  <!-- FONT -->
+  <meta name="description" content="Mobil, web ve backend alanlarında geliştirilen seçili projeler. Gerçek problemler, gerçek çözümler.">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/main.css" />
-
-  <!-- AOS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -19,15 +16,15 @@
 <!-- HERO -->
 <header class="hero hero-small">
   <div class="container hero-content" data-aos="fade-up">
-    <h1>Projelerim</h1>
+    <h1>Projeler</h1>
     <p class="subtitle">
-      Geliştirdiğim projeler ve teknik çalışmalar
+      Gerçek ihtiyaçlara yönelik geliştirilen çalışmalar
       <span>Mobil · Web · Backend</span>
     </p>
 
     <div class="hero-buttons">
       <a href="../index.html" class="btn ghost">← Ana Sayfa</a>
-      <a href="../blog/index.html" class="btn ghost">Blog Yazılarım</a>
+      <a href="../hizmetler.html" class="btn ghost">Hizmetler</a>
     </div>
   </div>
 </header>
@@ -38,47 +35,52 @@
 
     <div class="projects-grid">
 
-      <!-- PROJECT 0 : SECUREPASS -->
+      <!-- PROJECT: SECUREPASS -->
       <div class="project-card" data-aos="fade-up">
-        <h3>🔐 SecurePass</h3>
+        <h3>SecurePass</h3>
 
         <p class="project-desc">
-          Python ve Qt (PySide6) kullanılarak geliştirilen,
-          tamamen offline çalışan, çok kullanıcılı ve
-          şifreli masaüstü parola yöneticisi.
+          Güvenli parola yönetimi ihtiyacı için geliştirilen,
+          tamamen offline çalışan ve kullanıcı bazlı veri izolasyonu sağlayan
+          masaüstü uygulaması.
         </p>
 
-        <ul class="project-features">
-          <li>🔐 Fernet ile parola şifreleme</li>
-          <li>👤 Kullanıcıya özel parola kayıtları</li>
-          <li>📊 Kayıt listeleme (QTableView)</li>
-          <li>✏️ Düzenleme & 🗑 Silme</li>
-          <li>📦 EXE olarak dağıtılabilir</li>
+        <ul class="project-desc">
+          <li>Şifreli veri saklama (Fernet)</li>
+          <li>Kullanıcı bazlı erişim modeli</li>
+          <li>Masaüstü arayüz (Qt / PySide6)</li>
+          <li>Dağıtıma uygun yapı (EXE)</li>
         </ul>
 
         <div class="project-tags">
           <span>Python</span>
-          <span>PySide6 (Qt)</span>
-          <span>Desktop App</span>
+          <span>PySide6</span>
+          <span>Desktop</span>
           <span>Security</span>
         </div>
 
         <div class="hero-buttons">
           <a href="https://github.com/uaates/securepass" target="_blank" class="btn primary">
-            GitHub
+            Kaynak Kod
           </a>
         </div>
       </div>
 
-      <!-- PROJECT 1 -->
+      <!-- PROJECT: WEATHERWEAR -->
       <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-        <h3>WeatherWear AI</h3>
+        <h3>WeatherWear</h3>
 
         <p class="project-desc">
-          Hava durumuna göre kullanıcıya
-          kıyafet önerileri sunan,
-          yapay zeka destekli mobil uygulama.
+          Hava durumu verilerine göre kullanıcıya
+          kıyafet önerileri sunan mobil uygulama.
+          API tabanlı mimari ve veri odaklı öneri sistemi içerir.
         </p>
+
+        <ul class="project-desc">
+          <li>Mobil istemci (Flutter)</li>
+          <li>Backend servis entegrasyonu</li>
+          <li>Gerçek zamanlı veri kullanımı</li>
+        </ul>
 
         <div class="project-tags">
           <span>Flutter</span>
@@ -91,20 +93,25 @@
             GitHub
           </a>
           <a href="../blog/flutter-api.html" class="btn ghost">
-            Teknik Yazı
+            Teknik Detay
           </a>
         </div>
       </div>
 
-      <!-- PROJECT 2 -->
+      <!-- PROJECT: RESTAURANT APP -->
       <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>Mobil Restoran Uygulaması</h3>
+        <h3>Restoran Yönetim Uygulaması</h3>
 
         <p class="project-desc">
-          Konum tabanlı çalışan,
-          restoranlara özel geliştirilen
-          mobil uygulama.
+          Konum bazlı çalışan ve restoranlara özel geliştirilen,
+          kullanıcı ve işletme tarafını kapsayan mobil uygulama.
         </p>
+
+        <ul class="project-desc">
+          <li>Harita ve konum servisleri</li>
+          <li>Firebase altyapısı</li>
+          <li>Gerçek kullanıcı senaryoları</li>
+        </ul>
 
         <div class="project-tags">
           <span>Flutter</span>
@@ -117,15 +124,20 @@
         </span>
       </div>
 
-      <!-- PROJECT 3 -->
+      <!-- PROJECT: PORTFOLIO -->
       <div class="project-card" data-aos="fade-up" data-aos-delay="450">
-        <h3>Kişisel Portfolio & Blog Sitesi</h3>
+        <h3>Kişisel Portfolio & Blog</h3>
 
         <p class="project-desc">
-          HTML, CSS ve GitHub Pages kullanılarak
-          geliştirilen kişisel web sitesi.
-          Blog, projeler ve iletişim bölümleri içerir.
+          Kendi projelerimi, yazılarımı ve hizmetlerimi
+          sade ve hızlı bir yapıda sunmak için geliştirdiğim web sitesi.
         </p>
+
+        <ul class="project-desc">
+          <li>Statik site mimarisi</li>
+          <li>SEO uyumlu yapı</li>
+          <li>Blog & proje sunum sistemi</li>
+        </ul>
 
         <div class="project-tags">
           <span>HTML</span>
@@ -138,7 +150,7 @@
             Siteyi Gör
           </a>
           <a href="../blog/index.html" class="btn ghost">
-            Blog Yazıları
+            Blog
           </a>
         </div>
       </div>
@@ -155,7 +167,6 @@
   </div>
 </footer>
 
-<!-- AOS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
